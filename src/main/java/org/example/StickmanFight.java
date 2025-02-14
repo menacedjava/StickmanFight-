@@ -78,23 +78,23 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
         repaint();
     }
 
-//    @Override
-//    public void keyPressed(KeyEvent e) {
-//        // Player 1 Harakati
-//        if (e.getKeyCode() == KeyEvent.VK_A && player1X > 0) {
-//            player1X -= SPEED;
-//        }
-//        if (e.getKeyCode() == KeyEvent.VK_D && player1X < WIDTH - STICKMAN_WIDTH) {
-//            player1X += SPEED;
-//        }
-//        if (e.getKeyCode() == KeyEvent.VK_W) {
-//            player1Y -= 50;
-//        }
-//        if (e.getKeyCode() == KeyEvent.VK_F) {
-//            player1Punching = true;
-//            if (Math.abs(player1X + STICKMAN_WIDTH - player2X) < 20) {
-//                player2HP -= PUNCH_DAMAGE;
-//            }
+    @Override
+    public void keyPressed(KeyEvent e) {
+        // Player 1 Harakati
+        if (e.getKeyCode() == KeyEvent.VK_A && player1X > 0) {
+            player1X -= SPEED;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_D && player1X < WIDTH - STICKMAN_WIDTH) {
+            player1X += SPEED;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_W) {
+            player1Y -= 50;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_F) {
+            player1Punching = true;
+            if (Math.abs(player1X + STICKMAN_WIDTH - player2X) < 20) {
+                player2HP -= PUNCH_DAMAGE;
+            }
 //        }
 //
 //        // Player 2 Harakati
