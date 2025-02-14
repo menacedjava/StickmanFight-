@@ -21,15 +21,15 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
 
     private Timer timer;
 
-//    public StickmanFight() {
-//        this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-//        this.setBackground(Color.WHITE);
-//        this.setFocusable(true);
-//        this.addKeyListener(this);
-//
-//        timer = new Timer(1000 / 60, this);
-//        timer.start();
-//    }
+    public StickmanFight() {
+        this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        this.setBackground(Color.WHITE);
+        this.setFocusable(true);
+        this.addKeyListener(this);
+
+        timer = new Timer(1000 / 60, this);
+        timer.start();
+    }
 
 //    @Override
 //    protected void paintComponent(Graphics g) {
