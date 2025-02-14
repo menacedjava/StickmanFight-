@@ -31,18 +31,18 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
         timer.start();
     }
 
-//    @Override
-//    protected void paintComponent(Graphics g) {
-//        super.paintComponent(g);
-//
-//        // Chiziq (arena chegarasi)
-//        g.setColor(Color.GRAY);
-//        g.fillRect(0, HEIGHT - 50, WIDTH, 10);
-//
-//        // O'yinchilarning HP statusi
-//        g.setColor(Color.RED);
-//        g.fillRect(50, 20, player1HP * 2, 20);
-//        g.fillRect(WIDTH - 250, 20, player2HP * 2, 20);
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        // Chiziq (arena chegarasi)
+        g.setColor(Color.GRAY);
+        g.fillRect(0, HEIGHT - 50, WIDTH, 10);
+
+        // O'yinchilarning HP statusi
+        g.setColor(Color.RED);
+        g.fillRect(50, 20, player1HP * 2, 20);
+        g.fillRect(WIDTH - 250, 20, player2HP * 2, 20);
 //
 //        // Stickmanlar
 //        g.setColor(Color.BLACK);
