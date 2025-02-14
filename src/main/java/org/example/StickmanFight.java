@@ -44,34 +44,34 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
         g.fillRect(50, 20, player1HP * 2, 20);
         g.fillRect(WIDTH - 250, 20, player2HP * 2, 20);
 //
-//        // Stickmanlar
-//        g.setColor(Color.BLACK);
-//        g.fillOval(player1X, player1Y, STICKMAN_WIDTH, STICKMAN_HEIGHT); // Player 1
-//        g.fillOval(player2X, player2Y, STICKMAN_WIDTH, STICKMAN_HEIGHT); // Player 2
-//
-//        // Musht
-//        if (player1Punching) {
-//            g.setColor(Color.RED);
-//            g.fillOval(player1X + STICKMAN_WIDTH, player1Y + 30, 20, 20);
-//        }
-//        if (player2Punching) {
-//            g.setColor(Color.RED);
-//            g.fillOval(player2X - 20, player2Y + 30, 20, 20);
-//        }
-//
-//        // O'yin tugadi banneri
-//        if (player1HP <= 0) {
-//            g.setColor(Color.BLUE);
-//            g.setFont(new Font("Arial", Font.BOLD, 40));
-//            g.drawString("Player 2 Wins!", WIDTH / 2 - 100, HEIGHT / 2);
-//            timer.stop();
-//        } else if (player2HP <= 0) {
-//            g.setColor(Color.BLUE);
-//            g.setFont(new Font("Arial", Font.BOLD, 40));
-//            g.drawString("Player 1 Wins!", WIDTH / 2 - 100, HEIGHT / 2);
-//            timer.stop();
-//        }
-//    }
+
+        g.setColor(Color.BLACK);
+        g.fillOval(player1X, player1Y, STICKMAN_WIDTH, STICKMAN_HEIGHT); // Player 1
+        g.fillOval(player2X, player2Y, STICKMAN_WIDTH, STICKMAN_HEIGHT); // Player 2
+
+
+        if (player1Punching) {
+            g.setColor(Color.RED);
+            g.fillOval(player1X + STICKMAN_WIDTH, player1Y + 30, 20, 20);
+        }
+        if (player2Punching) {
+            g.setColor(Color.RED);
+            g.fillOval(player2X - 20, player2Y + 30, 20, 20);
+        }
+
+
+        if (player1HP <= 0) {
+            g.setColor(Color.BLUE);
+            g.setFont(new Font("Arial", Font.BOLD, 40));
+            g.drawString("Player 2 Wins!", WIDTH / 2 - 100, HEIGHT / 2);
+            timer.stop();
+        } else if (player2HP <= 0) {
+            g.setColor(Color.BLUE);
+            g.setFont(new Font("Arial", Font.BOLD, 40));
+            g.drawString("Player 1 Wins!", WIDTH / 2 - 100, HEIGHT / 2);
+            timer.stop();
+        }
+    }
 
 //    @Override
 //    public void actionPerformed(ActionEvent e) {
