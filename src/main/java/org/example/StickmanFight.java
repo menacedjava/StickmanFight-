@@ -127,9 +127,9 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
         }
     }
 
-//    @Override
-//    public void keyTyped(KeyEvent e) {
-//    }
+    @Override
+    public void keyTyped(KeyEvent e) {
+    }
 
 //    public static void main(String[] args) {
 //        JFrame frame = new JFrame("Stickman Fight");
