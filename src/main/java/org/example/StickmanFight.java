@@ -9,17 +9,17 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class StickmanFight extends JPanel implements ActionListener, KeyListener {
-//    private static final int WIDTH = 800, HEIGHT = 500;
-//    private static final int STICKMAN_WIDTH = 50, STICKMAN_HEIGHT = 100;
-//    private static final int SPEED = 10, PUNCH_DAMAGE = 10;
-//
-//    private int player1X = 100, player1Y = HEIGHT - STICKMAN_HEIGHT - 50;
-//    private int player2X = WIDTH - 150, player2Y = HEIGHT - STICKMAN_HEIGHT - 50;
-//
-//    private int player1HP = 100, player2HP = 100;
-//    private boolean player1Punching = false, player2Punching = false;
-//
-//    private Timer timer;
+    private static final int WIDTH = 800, HEIGHT = 500;
+    private static final int STICKMAN_WIDTH = 50, STICKMAN_HEIGHT = 100;
+    private static final int SPEED = 10, PUNCH_DAMAGE = 10;
+
+    private int player1X = 100, player1Y = HEIGHT - STICKMAN_HEIGHT - 50;
+    private int player2X = WIDTH - 150, player2Y = HEIGHT - STICKMAN_HEIGHT - 50;
+
+    private int player1HP = 100, player2HP = 100;
+    private boolean player1Punching = false, player2Punching = false;
+
+    private Timer timer;
 
 //    public StickmanFight() {
 //        this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
