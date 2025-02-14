@@ -35,11 +35,10 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // Chiziq (arena chegarasi)
+
         g.setColor(Color.GRAY);
         g.fillRect(0, HEIGHT - 50, WIDTH, 10);
 
-        // O'yinchilarning HP statusi
         g.setColor(Color.RED);
         g.fillRect(50, 20, player1HP * 2, 20);
         g.fillRect(WIDTH - 250, 20, player2HP * 2, 20);
@@ -80,7 +79,6 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
 
     @Override
     public void keyPressed(KeyEvent e) {
-        // Player 1 Harakati
         if (e.getKeyCode() == KeyEvent.VK_A && player1X > 0) {
             player1X -= SPEED;
         }
@@ -97,7 +95,7 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
             }
         }
 
-        // Player 2 Harakati
+
         if (e.getKeyCode() == KeyEvent.VK_LEFT && player2X > 0) {
             player2X -= SPEED;
         }
@@ -131,14 +129,14 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
     public void keyTyped(KeyEvent e) {
     }
 
-//    public static void main(String[] args) {
-//        JFrame frame = new JFrame("Stickman Fight");
-//        StickmanFight game = new StickmanFight();
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.add(game);
-//        frame.pack();
-//        frame.setLocationRelativeTo(null);
-//        frame.setVisible(true);
-//    }
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Stickman Fight");
+        StickmanFight game = new StickmanFight();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(game);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
 
 }
