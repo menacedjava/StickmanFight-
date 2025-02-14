@@ -72,11 +72,11 @@ public class StickmanFight extends JPanel implements ActionListener, KeyListener
             timer.stop();
         }
     }
-
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        repaint();
-//    }
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        repaint();
+    }
 
 //    @Override
 //    public void keyPressed(KeyEvent e) {
